@@ -6,8 +6,8 @@ build:
 	echo "glib-compile-schemas --strict --targetdir=schemas/ schemas"
 
 install:
-	mkdir -p ~/.local/share/gnome-shell/extensions/swap-finger-gestures-3-4@0verwritten.github.com/
-	cp -R ./* ~/.local/share/gnome-shell/extensions/swap-finger-gestures-3-4@0verwritten.github.com/
+	mkdir -p ~/.local/share/gnome-shell/extensions/swap-finger-gestures-3-4-remaster/
+	cp -R ./* ~/.local/share/gnome-shell/extensions/swap-finger-gestures-3-4-remaster/
 
 publish:
 	rm -rf build
