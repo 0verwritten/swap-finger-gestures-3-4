@@ -16,13 +16,10 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-/* exported init */
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 
-const Main = imports.ui.main;
-
-class Extension {
-  constructor() {}
-
+export default class SwapFingerGestures extends Extension {
   enable() {
     this._swipeMods = [
       Main.overview._swipeTracker._touchpadGesture,
@@ -62,8 +59,4 @@ class Extension {
     });
     this._swipeMods = [];
   }
-}
-
-function init() {
-  return new Extension();
 }
